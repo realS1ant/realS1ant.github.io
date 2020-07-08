@@ -10,7 +10,7 @@
     align-items: center;
     background-color: aquamarine;
     min-height: 7vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
 }
