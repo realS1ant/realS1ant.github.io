@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 #header {
@@ -11,7 +10,8 @@
     align-items: center;
     background-color: aquamarine;
     min-height: 7vh;
-    position: fixed;
+    position: absolute;
+    top: 0;
     width: 100%;
 }
 
@@ -85,7 +85,7 @@
     }
 
     .activated {
-        transform: translateX(0);
+        transform: translateX(0%);
         transition: transform .5s ease-in;
     }
 
@@ -111,16 +111,52 @@
 
 #intro {
     margin-top: 7vh;
-    background-color: #7fccb6;
+    background: linear-gradient( rgba(127, 204, 182, 0.80), rgba(127, 204, 182, 0.80)), url(code-bg.jpg);
+    background-size: cover;
     text-align: center;
     color: #363232;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#intro .heading {
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
 }
 
 #intro h1 {
-    margin: 3rem 0 0 0;
-    font-family: 'Poppins', sans-serif;
+    margin-top: 6rem;
+    color: #222831;
+    font-size: 40px;
 }
 #intro h2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    color: #393e46;
+    font-size: 30px;
+}
+
+.scroll {
+    margin-bottom: 3rem;
+}
+
+.scroll .icon {
+    font-size: 40px;
+    animation: bounce 4s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0%);
+    }
+    10% {
+        transform: translateY(10px);
+    }
+    20% {
+        transform: translateY(-14px);
+    }
+    40% {
+        transform: translateY(0%);
+    }
 }
