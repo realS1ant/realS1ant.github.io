@@ -13,6 +13,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 #header .logo h1 {
@@ -195,7 +196,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 250px);
     grid-gap: 1rem;
-    justify-content: space-between;
+    justify-content: center;
     margin: 2vh auto;
     width: 95%;
 }
