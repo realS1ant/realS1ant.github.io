@@ -79,15 +79,15 @@
         align-items: center;
         height: 80vh;
         width: 50%;
-        background: aquamarine;
+        background: #8cd1ba;
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease;
     }
 
     .activated {
-        transform: translateX(0%);
-        transition: transform .5s ease-in;
+        transform: translateX(0%) !important;
+        transition: transform .5s ease-in !important;
     }
 
     .nav-icon {
